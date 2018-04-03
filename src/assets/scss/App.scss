@@ -1,0 +1,45 @@
+$bg-color: yellow;
+$border-color: red;
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 580px;
+  height: 580px;
+
+  div {
+    display: inline-block;
+    //background: blue;
+    margin: 3px;
+    flex-grow: 1;
+    // height:100px;
+    box-sizing: border-box;
+    width: calc(100% * (1 / 10) - 10px);
+  }
+
+  .backgroundRed {
+    background: red;
+  }
+
+  .backgroundBlue {
+    background: blue;
+  }
+
+  .backgroundGrey {
+    background: grey;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: stretch;
+  align-items: flex-start;
+
+  .start {
+    cursor: pointer;
+  }
+}
